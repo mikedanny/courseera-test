@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Class Selectors</title>
+
+	<style type="text/css">
+		ul {
+			list-style: none;
+		}
+
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: green;
+			border: 1px solid blue;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+		}
+
+		a:hover, a:active {
+			background-color: red;
+			cursor: pointer;
+			color: yellow;
+		}
+
+		section > div:nth-child(odd):hover {
+			background-color: red;
+			cursor: pointer;
+		}
+
+	</style>
+
+</head>
+<body>
+	<h1>Pseudo Class Selectors</h1>
+	<ul>
+		<li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+		<li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+		<li><a href="https://www.tennis-warehouse.com/" target="_blank">Tennis Warehouse</a></li>
+	</ul>
+
+	<section>
+		<div>DIV 1</div>
+		<div>DIV 2</div>
+		<div>DIV 3</div>
+		<div>DIV 4</div>
+		<div>DIV 5</div>
+		<div>DIV 6</div>
+		<div>DIV 7</div>
+		<div>DIV 8</div>
+	</section>
+</body>
+</html>
