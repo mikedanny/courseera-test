@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Test</title>
+	<style type="text/css">
+		 #first {
+        width: 33.33%;
+        height: 500px;
+        /*width: 500px;*/
+        /*height: 500px;*/
+        background: red;
+        overflow: hidden;
+       }
+       #first #second{
+           position: relative;
+           left: 130px;
+           bottom: 170px;
+           width: 50%;
+           height: 20%;
+           margin: auto;
+           margin-top: 25%;
+           background: green;
+        }
+
+        #first > p {
+        	position: relative;
+        	top: 100px;
+        }
+
+        #second > p {
+        	position: relative;
+        	top: 50px;
+        }
+	</style>
+</head>
+<body>
+	 <div id="first">
+	  	<p>Something must be done</p>
+      	<div id="second">
+      		<p>This has to be taken into account</p>
+      	</div>
+     </div>
+</body>
+</html>
